@@ -20,3 +20,7 @@ Folder structure that meets MVC paradigm
 Up to good-quality coding standards
 
 Must protect API keys in Node with environment variables
+Team
+  Michael G
+  Michae P
+  Chini
