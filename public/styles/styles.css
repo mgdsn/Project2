@@ -16,6 +16,10 @@ html[data-theme="dark"] {
   }
 }
 
+#theme-toggle{
+  position: static;
+}
+
 .list-group-item {
   line-height: 2.5;
 }
