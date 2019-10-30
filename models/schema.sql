@@ -1,5 +1,12 @@
-DROP DATABASE IF EXISTS exampledb;
-CREATE DATABASE exampledb;
+DROP DATABASE IF EXISTS dev_db;
 
-DROP DATABASE IF EXISTS testdb;
-CREATE DATABASE testdb;
+CREATE DATABASE dev_db;
+
+USE dev_db;
+
+CREATE TABLE devs (
+  id INT NOT NULL,
+  dev_name VARCHAR(100) NOT NULL,
+  
+  PRIMARY KEY (id)
+);
