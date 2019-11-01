@@ -1,19 +1,15 @@
-var Sequelize = require("sequelize");
-// sequelize (lowercase) references my connection to the DB.
-var sequelize = require("../config/config.js");
-
 module.exports = function(sequelize, DataTypes) {
-  var Dev = sequelize.define("Dev Profile", {
+  var Dev = sequelize.define("Dev_Profile", {
     Name: DataTypes.STRING,
     LinkedIn: DataTypes.TEXT,
     GitHub: DataTypes.STRING,
     Project: DataTypes.STRING,
     Stack: DataTypes.STRING,
+    Language: DataTypes.STRING,
     Database: DataTypes.STRING,
     MVC: DataTypes.STRING,
-    Misc: DataTypes.STRING
+    Motivation: DataTypes.STRING,
+    Misc: DataTypes.TEXT,
   });
-  Dev.sync();
+  return Dev;
 };
-
-module.exports = Dev;
