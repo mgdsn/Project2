@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container" id="surveycontainer">
 
     <h2>Project Survey</h2>
  <hr>
@@ -78,9 +78,9 @@
  <h4>What is your primary motivation for the project you want to work on?</h4>
  <select class="form-control form-control-sm" id="q6">
    <option value=""></option>
-   <option value="1">Monetary gain</option>
-   <option value="2">Solve a problem</option>
-   <option value="3">Societal improvement</option>
+   <option value="Monetary Gain">Monetary gain</option>
+   <option value="Solve a problem">Solve a problem</option>
+   <option value="Societal improvement">Societal improvement</option>
  </select>
 
  <h3><strong>Question 7</strong></h3>
@@ -88,7 +88,6 @@
  <textarea rows="5" name="extrainfo" id="extrainfo" class="form-control form-control-sm" required></textarea>
  <hr>
 
-</div>
 
     <br>
     <br>
@@ -97,6 +96,17 @@
      Submit</button>
 
     <hr>
+</div>
+
+<div class="container" id="surveyresults">
+
+<h2 id="match-name"></h2>
+
+
+</div>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="/js/survey.js"></script>
 
 
 
