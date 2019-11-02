@@ -25,14 +25,13 @@ $("#submit").on("click", function(event) {
       q4: $("#q4").val(),
       q5: $("#q5").val(),
       q6: $("#q6").val(),
-      misc: $("#extrainfo").val(),
+      misc: $("#extrainfo").val()
     };
 
     $.post("/api/devadd", userData, function(data) {
       $("#surveycontainer").hide();
       $("#surveyresults").show();
       $("#match-name").text(data.name);
-     
     });
   } else {
     alert("Please fill out all fields before submitting!");

@@ -29,15 +29,10 @@ module.exports = function(app) {
       MVC: req.body.q5,
       Motivation: req.body.q6,
       Misc: req.body.misc
-
-    })
-      .then(function(calc) {
-        let stuff = req.body.name;
-        res.json(stuff);
-
-
-      });
-
+    }).then(function() {
+      let stuff = req.body.name;
+      res.json(stuff);
+    });
   });
 
   // Delete an example by id
