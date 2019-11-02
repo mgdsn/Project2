@@ -1,2 +1,4 @@
 DROP DATABASE IF EXISTS `dev_db`;
+
 CREATE DATABASE `dev_db`;
+
