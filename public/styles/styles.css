@@ -1,3 +1,7 @@
+body{
+  background-color: silver;
+}
+
 /* @media (prefers-color-scheme: dark) {
   html {
     content: "dark";
@@ -37,25 +41,30 @@ h1{
   text-align: center;
 }
 
-html{
+/* html{
   background-color: grey;
   color: #000000;
-}
+} */
 
 .btn-primary{
   color: white;
   background-color: #000000;
   border-color: #000000;
 }
-#loginButton, #submit{
+#loginButton, #submit, #loginSub{
   color: white;
   background-color: #000000;
   border-color: #000000;
 }
 
-body{
-  background: silver;
+#submit{
+  margin-bottom: 10rem  ;
 }
+
+.anchor{
+  color: red;
+}
+
 #socialMedia{
   display: block;
     width: 44px;
@@ -74,4 +83,11 @@ footer{
   width: 100%;
   color: white;
   text-align: center;
+}
+
+.jumbotron{
+  color: red;
+}
+a{
+  color: red;
 }
