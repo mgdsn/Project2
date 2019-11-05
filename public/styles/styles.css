@@ -1,5 +1,5 @@
 body{
-  background-color: silver;
+  background-color: silver !important;
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -62,7 +62,7 @@ h1{
 }
 
 .anchor{
-  color: red;
+  color: red !important;
 }
 
 #socialMedia{
@@ -89,5 +89,5 @@ footer{
   color: red;
 }
 a{
-  color: red;
+  color: red !important;
 }
