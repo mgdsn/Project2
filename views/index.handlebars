@@ -64,3 +64,33 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Megrim&display=swap" rel="stylesheet">
 <script src="/js/passcheck.js"></script>
+
+<script> const userPrefers = getComputedStyle(document.documentElement).getPropertyValue('content');	
+
+if (theme === "dark") {
+	document.getElementById("theme-toggle").innerHTML = "Light Mode";
+} else if (theme === "light") {
+	document.getElementById("theme-toggle").innerHTML = "Dark Mode";
+} else if  (userPrefers === "dark") {
+	document.documentElement.setAttribute('data-theme', 'dark');
+	window.localStorage.setItem('theme', 'dark');
+	document.getElementById("theme-toggle").innerHTML = "Light Mode";
+} else {
+	document.documentElement.setAttribute('data-theme', 'light');
+	window.localStorage.setItem('theme', 'light');
+	document.getElementById("theme-toggle").innerHTML = "Dark Mode";
+}
+
+function modeSwitcher() {
+	let currentMode = document.documentElement.getAttribute('data-theme');
+	if (currentMode === "dark") {
+		document.documentElement.setAttribute('data-theme', 'light');
+		window.localStorage.setItem('theme', 'light');
+		document.getElementById("theme-toggle").innerHTML = "Dark Mode";
+	} else {
+		document.documentElement.setAttribute('data-theme', 'dark');
+		window.localStorage.setItem('theme', 'dark');
+		document.getElementById("theme-toggle").innerHTML = "Light Mode";
+	}
+}
+</script>
