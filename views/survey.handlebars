@@ -1,103 +1,164 @@
-<div class="container" id="surveycontainer">
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">DevWeb</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="/survey">Survey<span class="sr-only">(current)</span></a>
+        </li>
+        <button type="button" id="loginButton" class="btn btn-primary" data-toggle="modal"
+          data-target="#exampleModalLong">
+          Login
+        </button>
+        <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog"
+          aria-labelledby="exampleModalLongTitle" aria-hidden="true" data-backdrop="false">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Login</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="usernameInput">Username</label>
+                    <input type="username" class="form-control" id="usernameAdd" aria-describedby="usernameHelp"
+                      placeholder="Enter username">
+                  </div>
+                  <div class="form-group">
+                    <label for="passInput">Password</label>
+                    <input type="password" class="form-control" id="check1" placeholder="Enter password">
+                  </div>
+                  <div id="regDiv">
+                    <a href="/register">Don't have an account? Click here to register.</a>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="submit" id="loginSub" class="btn btn-primary" data-dismiss="modal">Submit</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<div class="container">
+  <div class="container" id="surveycontainer">
 
     <h2>DevWeb Project Survey</h2>
     <a href="/">Return to homepage</a>
- <hr>
+    <hr>
 
- <h3><strong>About You</strong></h3>
- <h4>Full Name</h4>
- <input type="text" id="name" class="form-control" required>
+    <h3><strong>About You</strong></h3>
+    <h4>Full Name</h4>
+    <input type="text" id="name" class="form-control quest" required>
 
- <h4>LinkedIn Account URL</h4>
- <input type="url" id="linkedIn" class="form-control" value="http://linkedin.com/" required>
+    <h4>LinkedIn Account URL</h4>
+    <input type="url" id="linkedIn" class="form-control quest" value="http://linkedin.com/" required>
 
- <h4>GitHub Account URL</h4>
- <input type="text" id="gitHub" class="form-control" value="http://github.com/" required>
-
- <hr>
-
- <h3><strong>Question 1</strong></h3>
- <h4>What type of project are you looking to collaborate on?</h4>
- <select class="form-control form-control-sm" id="q1">
-   <option value=""></option>
-   <option value="Utilities">Utilities</option>
-   <option value="Entertainment">Entertainment</option>
-   <option value="Games">Games</option>
-   <option value="News">News</option>
-   <option value="Productivity">Productivity</option>
-   <option value="Lifestyle">Lifestyle</option>
-   <option value="Social Networking">Social Networking</option>
- </select>
-
- <h3><strong>Question 2</strong></h3>
- <h4>Do you prefer front-end, back-end, or full-stack work?</h4>
- <select class="form-control form-control-sm" id="q2">
-   <option value=""></option>
-   <option value="Front End">Front-end</option>
-   <option value="Back End">Back-end</option>
-   <option value="Full Stack">Full-stack</option>
- </select>
-
- <h3><strong>Question 3</strong></h3>
- <h4>What server-side language are you looking to use?</h4>
- <select class="form-control form-control-sm" id="q3">
-   <option value=""></option>
-   <option value="Python">Python</option>
-   <option value="Javascript">Javascript</option>
-   <option value="Ruby">Ruby</option>
-   <option value="Java/Scala">Java/Scala</option>
-   <option value="Go">Go</option>
-   <option value="PHP">PHP</option>
- </select>
-
-
- <h3><strong>Question 4</strong></h3>
- <h4>Which Database are you looking to use?</h4>
- <select class="form-control form-control-sm" id="q4">
-   <option value=""></option>
-   <option value="MySQL">MySQL</option>
-   <option value="PostgreSQL">PostgreSQL</option>
-   <option value="SQLAlchemy">SQLAlchemy</option>
-   <option value="CouchDB">CouchDB</option>
-   <option value="MongoDB">MonogoDB</option>
-   <option value="DynamoDB">DynamoDB</option>
- </select>
-
-
- <h3><strong>Question 5</strong></h3>
- <h4>Which client-side MVC are you looking to use?</h4>
- <select class="form-control form-control-sm" id="q5">
-   <option value=""></option>
-   <option value="AngularJS">AngularJS</option>
-   <option value="BackboneJS">BackboneJS</option>
-   <option value="EmberJS">EmberJS</option>
-   <option value="ReactJS">ReactJS</option>
- </select>
-
-
- <h3><strong>Question 6</strong></h3>
- <h4>What is your primary motivation for the project you want to work on?</h4>
- <select class="form-control form-control-sm" id="q6">
-   <option value=""></option>
-   <option value="Monetary Gain">Monetary gain</option>
-   <option value="Solve a problem">Solve a problem</option>
-   <option value="Societal improvement">Societal improvement</option>
- </select>
-
- <h3><strong>Question 7</strong></h3>
- <h4>Enter any additional information about what you'd like to work on or what you're interested in.</h4>
- <textarea rows="5" name="extrainfo" id="extrainfo" class="form-control form-control-sm" required></textarea>
- <hr>
-
-
-    <br>
-    <br>
-
-    <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i class="fa fa-check-circle" aria-hidden="true"></i>
-     Submit</button>
+    <h4>GitHub Account URL</h4>
+    <input type="text" id="gitHub" class="form-control quest" value="http://github.com/" required>
 
     <hr>
-</div>
 
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="/js/survey.js"></script>
+    <h3><strong>Question 1</strong></h3>
+    <h4>What type of project are you looking to collaborate on?</h4>
+    <select class="form-control form-control-sm quest" id="q1">
+      <option value=""></option>
+      <option value="Utilities">Utilities</option>
+      <option value="Entertainment">Entertainment</option>
+      <option value="Games">Games</option>
+      <option value="News">News</option>
+      <option value="Productivity">Productivity</option>
+      <option value="Lifestyle">Lifestyle</option>
+      <option value="Social Networking">Social Networking</option>
+    </select>
+
+    <h3><strong>Question 2</strong></h3>
+    <h4>Do you prefer front-end, back-end, or full-stack work?</h4>
+    <select class="form-control form-control-sm quest" id="q2">
+      <option value=""></option>
+      <option value="Front End">Front-end</option>
+      <option value="Back End">Back-end</option>
+      <option value="Full Stack">Full-stack</option>
+    </select>
+
+    <h3><strong>Question 3</strong></h3>
+    <h4>What server-side language are you looking to use?</h4>
+    <select class="form-control form-control-sm quest" id="q3">
+      <option value=""></option>
+      <option value="Python">Python</option>
+      <option value="Javascript">Javascript</option>
+      <option value="Ruby">Ruby</option>
+      <option value="Java/Scala">Java/Scala</option>
+      <option value="Go">Go</option>
+      <option value="PHP">PHP</option>
+    </select>
+
+
+    <h3><strong>Question 4</strong></h3>
+    <h4>Which Database are you looking to use?</h4>
+    <select class="form-control form-control-sm quest" id="q4">
+      <option value=""></option>
+      <option value="MySQL">MySQL</option>
+      <option value="PostgreSQL">PostgreSQL</option>
+      <option value="SQLAlchemy">SQLAlchemy</option>
+      <option value="CouchDB">CouchDB</option>
+      <option value="MongoDB">MonogoDB</option>
+      <option value="DynamoDB">DynamoDB</option>
+    </select>
+
+
+    <h3><strong>Question 5</strong></h3>
+    <h4>Which client-side MVC are you looking to use?</h4>
+    <select class="form-control form-control-sm quest" id="q5">
+      <option value=""></option>
+      <option value="AngularJS">AngularJS</option>
+      <option value="BackboneJS">BackboneJS</option>
+      <option value="EmberJS">EmberJS</option>
+      <option value="ReactJS">ReactJS</option>
+    </select>
+
+
+    <h3><strong>Question 6</strong></h3>
+    <h4>What is your primary motivation for the project you want to work on?</h4>
+    <select class="form-control form-control-sm quest" id="q6">
+      <option value=""></option>
+      <option value="Monetary Gain">Monetary gain</option>
+      <option value="Solve a problem">Solve a problem</option>
+      <option value="Societal improvement">Societal improvement</option>
+    </select>
+
+    <h3><strong>Question 7</strong></h3>
+    <h4>Enter any additional information about what you'd like to work on or what you're interested in.</h4>
+    <textarea rows="5" name="extrainfo" id="extrainfo" class="form-control form-control-sm quest" required></textarea>
+    <hr>
+
+
+    <br>
+    <br>
+
+    <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i class="fa fa-check-circle"
+        aria-hidden="true"></i>
+      Submit</button>
+
+    <hr>
+  </div>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="/js/survey.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>

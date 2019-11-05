@@ -4,16 +4,16 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/styles/styles.css" media="screen" title="no title" charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="/styles/styles.css" media="screen">
 	<link rel="stylesheet" type="text/css" href="/styles/animations.css">
-  <link id='CSS' rel='stylesheet' type='text/css'
-    href='https://d33wubrfki0l68.cloudfront.net/bundles/682d62a8b975cb2ecfad19e9ba70219eaa2890e1.css' />
+  {{!-- <link id='CSS' rel='stylesheet' type='text/css'
+    href='https://d33wubrfki0l68.cloudfront.net/bundles/682d62a8b975cb2ecfad19e9ba70219eaa2890e1.css' /> --}}
   <title>Home Page</title>
 </head>
 
 <body>
   {{{body}}}
-  <script> const userPrefers = getComputedStyle(document.documentElement).getPropertyValue('content');	
+  {{!-- <script> const userPrefers = getComputedStyle(document.documentElement).getPropertyValue('content');	
 
 if (theme === "dark") {
 	document.getElementById("theme-toggle").innerHTML = "Light Mode";
@@ -41,8 +41,14 @@ function modeSwitcher() {
 		document.getElementById("theme-toggle").innerHTML = "Light Mode";
 	}
 }
-</script>
-<script type="text/javascript" src="/js/animations.js"></script>
-</body>
+</script> --}}
 
+</body>
+<footer>
+	<div id="mediaLinks">
+	<a href="https://www.linkedin.com/"><img id="socialMedia" src="https://image.flaticon.com/icons/svg/1384/1384014.svg"></a>
+	<a href="https://www.github.com/"><img id="socialMedia" src="https://image.flaticon.com/icons/svg/25/25231.svg"></a>
+	</div>
+</footer>
+<script type="text/javascript" src="/js/animations.js"></script>
 </html>

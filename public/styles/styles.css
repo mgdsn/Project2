@@ -1,16 +1,8 @@
-html, html[data-theme="light"] {
-  --light-text-color: hsl(0, 0%, 35%);
-  --main-background-color: hsl(0, 5%, 95%);
-  --main-text-color: hsl(0, 0%, 0%);
+body{
+  background-color: silver !important;
 }
 
-html[data-theme="dark"] {
-  --light-text-color: hsl(0, 0%, 60%);
-  --main-background-color: hsl(0, 0%, 10%);
-  --main-text-color: hsl(0, 10%, 80%);
-}
-
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   html {
     content: "dark";
   }
@@ -18,7 +10,7 @@ html[data-theme="dark"] {
 
 #theme-toggle{
   position: static;
-}
+} */
 
 .list-group-item {
   line-height: 2.5;
@@ -43,4 +35,59 @@ td{
 
 #match-name{
   text-align: center;
+}
+
+h1{
+  text-align: center;
+}
+
+/* html{
+  background-color: grey;
+  color: #000000;
+} */
+
+.btn-primary{
+  color: white;
+  background-color: #000000;
+  border-color: #000000;
+}
+#loginButton, #submit, #loginSub, #add-user{
+  color: white;
+  background-color: #000000;
+  border-color: #000000;
+}
+
+#submit{
+  margin-bottom: 10rem  ;
+}
+
+.anchor{
+  color: red !important;
+}
+
+#socialMedia{
+  display: block;
+    width: 44px;
+    height: 44px;
+}
+#mediaLinks{
+  padding-right: 50%;
+  padding-left: 48%;
+}
+
+footer{
+  background-color: #343a40;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+
+.jumbotron{
+  color: red;
+}
+a{
+  color: red !important;
 }

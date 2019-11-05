@@ -1,78 +1,101 @@
-<script> const userPrefers = getComputedStyle(document.documentElement).getPropertyValue('content');	
-
-if (theme === "dark") {
-	document.getElementById("theme-toggle").innerHTML = "Light Mode";
-} else if (theme === "light") {
-	document.getElementById("theme-toggle").innerHTML = "Dark Mode";
-} else if  (userPrefers === "dark") {
-	document.documentElement.setAttribute('data-theme', 'dark');
-	window.localStorage.setItem('theme', 'dark');
-	document.getElementById("theme-toggle").innerHTML = "Light Mode";
-} else {
-	document.documentElement.setAttribute('data-theme', 'light');
-	window.localStorage.setItem('theme', 'light');
-	document.getElementById("theme-toggle").innerHTML = "Dark Mode";
-}
-
-function modeSwitcher() {
-	let currentMode = document.documentElement.getAttribute('data-theme');
-	if (currentMode === "dark") {
-		document.documentElement.setAttribute('data-theme', 'light');
-		window.localStorage.setItem('theme', 'light');
-		document.getElementById("theme-toggle").innerHTML = "Dark Mode";
-	} else {
-		document.documentElement.setAttribute('data-theme', 'dark');
-		window.localStorage.setItem('theme', 'dark');
-		document.getElementById("theme-toggle").innerHTML = "Light Mode";
-	}
-}
-</script>
-<div class="container">
-  <div class="row">
-    <div class="col-8 offset-2">
-      <div class="card mt-4">
-        <div class="card-body">
-          <h5 class="card-title">Example</h5>
-          <p>
-            <strong>ID</strong>: {{example.id}}</p>
-          <p>
-          <p>
-            <strong>Text</strong>: {{example.text}}</p>
-          <p>
-            <strong>Description:</strong> {{example.description}}</p>
-            <a href="/">← Back To Home</a>
-            <button id="theme-toggle" onclick="modeSwitcher()"></button>
-        </div>
-      </div>
-    </div>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Navbar w/ text</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Features</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Pricing</a>
+      </li>
+    </ul>
+    <span class="navbar-text">
+      Navbar text with an inline element
+    </span>
   </div>
+</nav>
+<div class="container">
+	<div class="row">
+		<div class="col-8 offset-2">
+			<div class="card mt-4">
+				<div class="card-body">
+					<h5 class="card-title">Example</h5>
+					<p>
+						<strong>ID</strong>: {{example.id}}</p>
+					<p>
+						<p>
+							<strong>Text</strong>: {{example.text}}</p>
+						<p>
+							<strong>Description:</strong> {{example.description}}</p>
+						<a href="/">← Back To Home</a>
+						<button id="theme-toggle" onclick="modeSwitcher()"></button>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
-<script> const userPrefers = getComputedStyle(document.documentElement).getPropertyValue('content');	
 
-if (theme === "dark") {
-	document.getElementById("theme-toggle").innerHTML = "Light Mode";
-} else if (theme === "light") {
-	document.getElementById("theme-toggle").innerHTML = "Dark Mode";
-} else if  (userPrefers === "dark") {
-	document.documentElement.setAttribute('data-theme', 'dark');
-	window.localStorage.setItem('theme', 'dark');
-	document.getElementById("theme-toggle").innerHTML = "Light Mode";
-} else {
-	document.documentElement.setAttribute('data-theme', 'light');
-	window.localStorage.setItem('theme', 'light');
-	document.getElementById("theme-toggle").innerHTML = "Dark Mode";
-}
 
-function modeSwitcher() {
-	let currentMode = document.documentElement.getAttribute('data-theme');
-	if (currentMode === "dark") {
-		document.documentElement.setAttribute('data-theme', 'light');
-		window.localStorage.setItem('theme', 'light');
+<script> const userPrefers = getComputedStyle(document.documentElement).getPropertyValue('content');
+
+	if (theme === "dark") {
+		document.getElementById("theme-toggle").innerHTML = "Light Mode";
+	} else if (theme === "light") {
 		document.getElementById("theme-toggle").innerHTML = "Dark Mode";
-	} else {
+	} else if (userPrefers === "dark") {
 		document.documentElement.setAttribute('data-theme', 'dark');
 		window.localStorage.setItem('theme', 'dark');
 		document.getElementById("theme-toggle").innerHTML = "Light Mode";
+	} else {
+		document.documentElement.setAttribute('data-theme', 'light');
+		window.localStorage.setItem('theme', 'light');
+		document.getElementById("theme-toggle").innerHTML = "Dark Mode";
 	}
-}
+
+	function modeSwitcher() {
+		let currentMode = document.documentElement.getAttribute('data-theme');
+		if (currentMode === "dark") {
+			document.documentElement.setAttribute('data-theme', 'light');
+			window.localStorage.setItem('theme', 'light');
+			document.getElementById("theme-toggle").innerHTML = "Dark Mode";
+		} else {
+			document.documentElement.setAttribute('data-theme', 'dark');
+			window.localStorage.setItem('theme', 'dark');
+			document.getElementById("theme-toggle").innerHTML = "Light Mode";
+		}
+	}
+	const userPrefers = getComputedStyle(document.documentElement).getPropertyValue('content');
+
+	if (theme === "dark") {
+		document.getElementById("theme-toggle").innerHTML = "Light Mode";
+	} else if (theme === "light") {
+		document.getElementById("theme-toggle").innerHTML = "Dark Mode";
+	} else if (userPrefers === "dark") {
+		document.documentElement.setAttribute('data-theme', 'dark');
+		window.localStorage.setItem('theme', 'dark');
+		document.getElementById("theme-toggle").innerHTML = "Light Mode";
+	} else {
+		document.documentElement.setAttribute('data-theme', 'light');
+		window.localStorage.setItem('theme', 'light');
+		document.getElementById("theme-toggle").innerHTML = "Dark Mode";
+	}
+
+	function modeSwitcher() {
+		let currentMode = document.documentElement.getAttribute('data-theme');
+		if (currentMode === "dark") {
+			document.documentElement.setAttribute('data-theme', 'light');
+			window.localStorage.setItem('theme', 'light');
+			document.getElementById("theme-toggle").innerHTML = "Dark Mode";
+		} else {
+			document.documentElement.setAttribute('data-theme', 'dark');
+			window.localStorage.setItem('theme', 'dark');
+			document.getElementById("theme-toggle").innerHTML = "Light Mode";
+		}
+	}
 </script>
