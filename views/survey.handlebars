@@ -1,4 +1,4 @@
-<script> const userPrefers = getComputedStyle(document.documentElement).getPropertyValue('content');	
+{{!-- <script> const userPrefers = getComputedStyle(document.documentElement).getPropertyValue('content');	
 
 if (theme === "dark") {
 	document.getElementById("theme-toggle").innerHTML = "Light Mode";
@@ -26,9 +26,9 @@ function modeSwitcher() {
 		document.getElementById("theme-toggle").innerHTML = "Light Mode";
 	}
 }
-</script>
+</script> --}}
 <header>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href="#">DevWeb</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,19 +36,19 @@ function modeSwitcher() {
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
-        </li>
         <li class="nav-item">
-          <a class="nav-link" href="/survey">Survey</a>
+          <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="/survey">Survey<span class="sr-only">(current)</span></a>
         </li>
         <button type="button" id="loginButton" class="btn btn-primary" data-toggle="modal"
           data-target="#exampleModalLong">
           Login
         </button>
-        <li>
+        {{!-- <li>
             <button id="theme-toggle" onclick="modeSwitcher()"></button>
-        </li>
+        </li> --}}
       </ul>
     </div>
   </nav>
