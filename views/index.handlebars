@@ -11,11 +11,11 @@
           <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/survey">Survey</a>
+          <a class="nav-link" id="surveyLink" href="/survey">Survey</a>
         </li>
         <button type="button" id="loginButton" class="btn btn-primary" data-toggle="modal"
           data-target="#exampleModalLong">
-          Login
+          Login/Register
         </button>
         <li>
             <button id="theme-toggle" onclick="modeSwitcher()"></button>
@@ -43,14 +43,14 @@
                     <label for="passInput">Password</label>
                     <input type="password" class="form-control" id="check1" placeholder="Enter password">
                   </div>
-                  <div>
+                  <div id="regDiv">
                     <a href="/register">Don't have an account? Click here to register.</a>
                   </div>
                 </form>
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="submit" class="btn btn-primary" data-dismiss="modal">Submit</button>
+                <button type="submit" id="loginSub" class="btn btn-primary" data-dismiss="modal">Submit</button>
               </div>
             </div>
           </div>
