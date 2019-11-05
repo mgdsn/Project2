@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <script> const userPrefers = getComputedStyle(document.documentElement).getPropertyValue('content');	
 
 if (theme === "dark") {
@@ -29,8 +30,11 @@ function modeSwitcher() {
 </script>
 
 <div class="container">
+=======
+<div class="container" id="surveycontainer">
+>>>>>>> master
 
-    <h2>Project Survey</h2>
+    <h2>DevWeb Project Survey</h2>
  <hr>
 
  <h3><strong>About You</strong></h3>
@@ -38,10 +42,10 @@ function modeSwitcher() {
  <input type="text" id="name" class="form-control" required>
 
  <h4>LinkedIn Account URL</h4>
- <input type="url" id="linkedIn" class="form-control" required>
+ <input type="url" id="linkedIn" class="form-control" value="http://linkedin.com/" required>
 
- <h4>GitHub Username</h4>
- <input type="text" id="gitHub" class="form-control" required>
+ <h4>GitHub Account URL</h4>
+ <input type="text" id="gitHub" class="form-control" value="http://github.com/" required>
 
  <hr>
 
@@ -108,9 +112,9 @@ function modeSwitcher() {
  <h4>What is your primary motivation for the project you want to work on?</h4>
  <select class="form-control form-control-sm" id="q6">
    <option value=""></option>
-   <option value="1">Monetary gain</option>
-   <option value="2">Solve a problem</option>
-   <option value="3">Societal improvement</option>
+   <option value="Monetary Gain">Monetary gain</option>
+   <option value="Solve a problem">Solve a problem</option>
+   <option value="Societal improvement">Societal improvement</option>
  </select>
 
  <h3><strong>Question 7</strong></h3>
@@ -118,7 +122,6 @@ function modeSwitcher() {
  <textarea rows="5" name="extrainfo" id="extrainfo" class="form-control form-control-sm" required></textarea>
  <hr>
 
-</div>
 
     <br>
     <br>
@@ -127,6 +130,14 @@ function modeSwitcher() {
      Submit</button>
 
     <hr>
+</div>
+
+<div class="container" id="surveyresults">
+
+<h2 id="match-name">Matches</h2>
 
 
+</div>
 
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="/js/survey.js"></script>
