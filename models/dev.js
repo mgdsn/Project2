@@ -9,7 +9,9 @@ module.exports = function(sequelize, DataTypes) {
     Database: DataTypes.STRING,
     MVC: DataTypes.STRING,
     Motivation: DataTypes.STRING,
-    Misc: DataTypes.TEXT
+    Misc: DataTypes.TEXT,
+    Username: DataTypes.STRING,
+    Password: DataTypes.TEXT
   });
   return Dev;
 };
