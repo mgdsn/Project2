@@ -1,5 +1,7 @@
 module.exports = function(sequelize, DataTypes) {
   var Dev = sequelize.define("Dev_Profile", {
+    Username: DataTypes.STRING,
+    Password: DataTypes.STRING,
     Name: DataTypes.STRING,
     LinkedIn: DataTypes.TEXT,
     GitHub: DataTypes.STRING,
