@@ -1,4 +1,4 @@
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   html {
     content: "dark";
   }
@@ -6,7 +6,7 @@
 
 #theme-toggle{
   position: static;
-}
+} */
 
 .list-group-item {
   line-height: 2.5;
@@ -43,12 +43,21 @@ html{
 }
 
 .btn-primary{
-  color: grey;
+  color: white;
   background-color: #000000;
   border-color: #000000;
 }
-#loginButton{
-  color: grey;
+#loginButton, #submit{
+  color: white;
   background-color: #000000;
   border-color: #000000;
+}
+
+body{
+  background: silver;
+}
+#socialMedia{
+  display: block;
+    width: 44px;
+    height: 44px;
 }
