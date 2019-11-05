@@ -1,6 +1,7 @@
 svg {
   width: 100%;
-  float: left;;
+  float: left;
+  padding-left: 30%;
 }
 .filled-heading {
   text-transform: uppercase;

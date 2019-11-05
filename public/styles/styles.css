@@ -61,3 +61,17 @@ body{
     width: 44px;
     height: 44px;
 }
+#mediaLinks{
+  padding-right: 50%;
+  padding-left: 48%;
+}
+
+footer{
+  background-color: #343a40;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
