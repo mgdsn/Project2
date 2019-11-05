@@ -23,6 +23,7 @@ $(document).ready(function() {
             $("#q5").val(survdata.MVC);
             $("#q6").val(survdata.Motivation);
             $("#extrainfo").val(survdata.Misc);
+            $("#loginButton").html("Welcome, " + loggedUser.name);
           }
         });
       }
@@ -38,7 +39,7 @@ $("#submit").on("click", function(event) {
   event.preventDefault();
   function validateForm() {
     var isValid = true;
-    $(".form-control").each(function() {
+    $(".quest").each(function() {
       if ($(this).val() === "") {
         isValid = false;
       }

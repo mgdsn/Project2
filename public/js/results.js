@@ -4,6 +4,7 @@ $(document).ready(function() {
     name: loggedUser.name,
     password: loggedUser.password
   };
+  $("#loginButton").html("Welcome, " + loggedUser.name);
   $.post("/api/calcmatch", localData, function(data) {
     $("#surveyresults").append(
       "<tr><th>Name</th><th>LinkedIn</th><th>GitHub</th><th>Project</th><th>Stack</th><th>Language</th><th>Database</th><th>MVC</th><th>Motivation</th><th>Extra Info</th></tr>"
